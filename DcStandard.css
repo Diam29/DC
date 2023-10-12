@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=IBM+Plex+Mono&family=Luckiest+Guy&family=Montserrat:ital,wght@0,200;0,300;0,500;1,200;1,300;1,500&family=Open+Sans:wght@400;700&family=Shadows+Into+Light+Two&display=swap');
+
+:root {
+    --bgc-primario: #f5f5f5;
+    --color-title: #CAB8FF;
+    --color-text: #C1FFD7;
+    --color-text-header: #FCFFA6;
+    --color-icons: #B5DEFF;
+    --bgc-nav-wave: #5800FF;
+    --color-items: #72FFFF;
+    --color-text-w: #ACBCFF;
+    --color-text-bw: #B799FF;
+    --color-text-bb: #AEE2FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bgc-primario);
+}
+
+
+.container {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__DcTeam {
+    color: var(--color-items);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.title__DcTeam>span {
+    color: var(--color-text-header);
+}
+
+header {
+    width: 100%;
+    height: 35rem;
+    position: relative;
+    overflow: hidden;
+    background: -webkit-linear-gradient(to right, #a044ff90, #6a309390), url(./img/mkd2.jpg);
+    background: linear-gradient(to right, #a044ff90, #6a309390), url(./img/mkd2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wave {
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+}
+
+.tec__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.title {
+    grid-column: span 2;
+}
+
+h2 {
+    color: var(--bgc-nav-wave);
+    font-size: 3em;
+    text-align: center;
+}
+
+.list__tec1 {
+    grid-column: 1;
+    line-height: 25px;
+}
+
+.list__tec2 {
+    grid-column: 2;
+    line-height: 25px;
+}
+
+
+
+.li__divs {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+.title__h4 {
+    text-align: center;
+    color: var(--color-text-bw);
+    font-size: 2em;
+    line-height: 60px;
+}
+
+.title__h4>span {
+    font-size: 30px;
+    color: var(--bgc-primario);
+    align-self: initial;
+    border: 2px solid var(--bgc-nav-wave);
+    border-radius: 50%;
+    background-color: var(--bgc-nav-wave);
+    padding: 10px;
+}
+
+.text__p {
+    text-align: center;
+    color: var(--color-text-bw);
+}
+
+
+footer {
+    width: 100%;
+    height: 14rem;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    background: -webkit-linear-gradient(to right, #a044ff90, #6a309390), url(./img/mkd.jpg);
+    background: linear-gradient(to right, #a044ff90, #6a309390), url(./img/mkd.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.wf {
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+}
+
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.content__info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 15px;
+    /* margin-top: 90px; */
+    padding: 40px;
+    z-index: 9999;
+}
+
+.content__info .img__footer {
+    width: 15rem;
+}
+
+.footer__info {
+    color: var(--color-text);
+}
+
+.Linkedin .bx {
+
+    background-color: var(--color-text);
+    font-size: 3rem;
+    margin-top: .5rem;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 700px) {
+    .tec__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title__DcTeam {
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px;
+        background-size: cover;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wf {
+        display: flex;
+        flex-wrap: wrap;
+        width: 0;
+        height: 0;
+    }
+
+}
